@@ -19,3 +19,9 @@ if sent1 and sent2:
         st.success("✅ Sentences are similar!")
     else:
         st.error("❌ Sentences are different.")
+import os
+os.environ["PORT"] = os.getenv("PORT", "8501")
+
+import streamlit as st
+# your other imports
+
